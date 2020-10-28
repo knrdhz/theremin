@@ -7,7 +7,8 @@ let context = new AudioContext(),
 
 const canvas = document.getElementById('theremin');
 const ctx = canvas.getContext('2d');
-console.log(canvas);
+
+let numberOfSources = 2;
 
 let gainNode = context.createGain();
 gainNode.connect(context.destination);
